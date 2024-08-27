@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess-like Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Advanced Chess-like Game</h1>
+        <div id="game-layout">
+            <div id="game-section">
+                <div id="player-selection">
+                    <h2>Choose Your Champion</h2>
+                    <button id="select-player-a">Player A</button>
+                    <button id="select-player-b">Player B</button>
+                </div>
+
+                <div id="game-status">Current Game Status</div>
+
+                <div id="game-board"></div>
+
+                <div id="move-controls">
+                    <div id="selected-piece"></div>
+                    <div id="move-buttons"></div>
+                </div>
+
+                <div id="move-history">
+                    <h3></h3>
+                    <ul id="history-list"></ul>
+                </div>
+            </div>
+            <h3>Sachi Tiwari</h3>
+        </div>
+    </div>
+
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="game-over-message">Game Over! Well played!</h2>
+            <button id="new-game-button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
